@@ -1,0 +1,21 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.marakana.android.fibonacciservice"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true" >
+        
+        <service
+            android:name=".FibonacciService">
+            <intent-filter>
+                <action android:name="com.marakana.android.fibonaccicommon.IFibonacciService" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
